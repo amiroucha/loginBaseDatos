@@ -13,17 +13,17 @@ const TabsLayout = () => {
         }}
       />
       <Tabs.Screen
-        name="productos/index"
+        name="baseDatos/index"
         options={{
-          title:'productos',
-          tabBarIcon: ({ color }) => <Ionicons size={28} name="film-outline" color={color} />,
+          title:'Informacion',
+          tabBarIcon: ({ color }) => <Ionicons size={28} name="grid-outline" color={color} />,
         }}
       />
       <Tabs.Screen
-        name="configuracion/index"
+        name="desconexion/index"
         options={{
-          title: 'Configuracion',
-          tabBarIcon: ({ color }) => <Ionicons size={28} name="construct-outline" color={color} />,
+          title: 'Sign out',
+          tabBarIcon: ({ color }) => <Ionicons size={28} name="log-out-outline" color={color} />,
         }}
       />
     </Tabs>
