@@ -21,6 +21,13 @@ export default function Index() {
         }
     }
 
+    const register = async () => {
+        try{
+          const user = await (signInWithEmailAndPassword(auth, email,password));
+        }catch(error:any){
+          console.log(error())
+        }
+    }
 
     return(
         <View>
