@@ -1,6 +1,5 @@
 import { GlobalStyles } from '@/theme/GlobalStyles';
 import { View, Text, TextInput, Image, Pressable, ScrollView  } from 'react-native';
-import Boton from '../components/Boton';
 import { Alert } from "react-native";
 import { useState } from "react";
 import { router} from "expo-router";
