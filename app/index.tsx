@@ -48,7 +48,6 @@ const login = () => {
           placeholder='contraseña' value={password} onChangeText={setPassword}
             secureTextEntry />
           
-          <Boton label='Login' link='../tabs'></Boton>
 
           <View style={GlobalStyles.contenedorRegistroAcceder}>
 

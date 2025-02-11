@@ -77,5 +77,39 @@ export const GlobalStyles =  StyleSheet.create({
         marginTop: 30,
         textAlign:'center',
     },
+    inputInformacion:{
+        backgroundColor: Colors.grey,
+        color: Colors.black,
+        padding: 10,
+        borderRadius:30,
+        width: '40%',
+        fontSize: 20,
+        margin: 5,
+        borderWidth:2,
+        borderColor: Colors.white,
+    },
+    botonCrear:{
+        width: 90,
+        height: 60,
+        padding: 12,
+        fontSize: 24,
+        borderRadius: 30,
+        backgroundColor: Colors.blueLight,
+        marginRight: 20,
+        borderColor: Colors.black,
+        borderWidth: 2,
+        marginTop: 20,
+    },
+    texto:{
+        fontSize: 20,
+        color: Colors.black,
+        fontWeight:'black',
+        textAlign: 'center',
+    },
+    botonElimiar:{
+
+
+    },
+    
 
 })
