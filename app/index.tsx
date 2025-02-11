@@ -5,6 +5,7 @@ import { useState } from "react";
 import { router} from "expo-router";
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword } from 'firebase/auth';
 import { auth } from '@/Firebaseconfig';
+import Boton from '../components/Boton';
 
 
 
@@ -38,21 +39,29 @@ const login = () => {
     
       return (
         <View style={GlobalStyles.contenedor}>
-          <Text style={GlobalStyles.tituloLogin}> Página de login</Text>
-          <TextInput style={GlobalStyles.inputLogin} placeholder="email"  value={email} onChangeText={setEmail} />
-          <TextInput style={GlobalStyles.inputLogin} placeholder='contraseña' value={password} onChangeText={setPassword}
+          <Text style={GlobalStyles.tituloLogin}> Iniciar Sesion</Text>
+          
+          <TextInput style={GlobalStyles.inputLogin} 
+          placeholder="email"  value={email} onChangeText={setEmail} />
+          
+          <TextInput style={GlobalStyles.inputLogin} 
+          placeholder='contraseña' value={password} onChangeText={setPassword}
             secureTextEntry />
-          <View style={GlobalStyles.contenedor}>
-            <Pressable style={GlobalStyles.boton} onPress={logIn}>
-              <Text style={GlobalStyles.boton}>Login</Text>
+          
+          <Boton label='Login' link='../tabs'></Boton>
+
+          <View style={GlobalStyles.contenedorRegistroAcceder}>
+
+            <Pressable onPress={()=>{router.push('./(tabs)/bbdd')}}>
+              <Text style={GlobalStyles.registrar} onPress={register}>Regístrate aquí</Text>
             </Pressable>
-            <Pressable style={GlobalStyles.boton} onPress={register}>
-              <Text style={GlobalStyles.boton}>Registrarse</Text>
-            </Pressable>
+
+            <Boton label='Acceder' link='./tabs/baseDatos' onPress={logIn}></Boton>
+            
           </View>
-    
-    
+
         </View>
+        
       ); 
   }
   export default login

@@ -38,6 +38,18 @@ export const GlobalStyles =  StyleSheet.create({
         borderWidth: 2,
         marginTop: 20,
     },
+    contenedorRegistroAcceder:{
+        display:'flex',
+        flexDirection:'row',
+        width:'100%',
+        justifyContent:'space-between',
+        alignItems:'center'
+    },   
+    registrar:{
+        textDecorationLine:'underline',
+        color:Colors.blueLight,
+        fontSize: 18,
+    },
     LoginImg:{
         width: 150,
         height: 150,
