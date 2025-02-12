@@ -13,7 +13,6 @@ const ScreenConfiguracion = () => {
   });
 
 
-
   return (
     <ScrollView contentContainerStyle={{flexGrow: 1}}>
       <View style={GlobalStyles.contenedor}>

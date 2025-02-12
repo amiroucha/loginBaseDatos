@@ -34,17 +34,6 @@ const ScreenProductos = () => {
     }
   }
 
-  const borrarTarea = async (id: string) =>{
-    const referenciaTarea = doc(coleccionTareas,id);
-
-
-    await (deleteDoc(referenciaTarea));
-    console.log("tarea eliminada:" + referenciaTarea);
-    cargarDatos();
-  }
-
-
-
 
 
   return (
@@ -54,7 +43,9 @@ const ScreenProductos = () => {
 
           <View>
 
-            <TextInput style={[GlobalStyles.inputInformacion,{width:300}]} placeholder="Introduzca una tarea"  value={tarea} onChangeText={setTarea} />
+            <TextInput style={[GlobalStyles.inputInformacion,{width:300}]} 
+            placeholder="Introduzca una tarea"  value={tarea} onChangeText={setTarea} />
+            
             <Pressable style={GlobalStyles.botonCrear} onPress={addTarea}>
                 <Text style={GlobalStyles.texto}>Add</Text>
             </Pressable>
@@ -65,9 +56,6 @@ const ScreenProductos = () => {
             return (
               <View>
                 <Text>{item.tarea}</Text>
-                <Pressable style={[GlobalStyles.botonCrear]} onPress={() => borrarTarea(item.id)}>
-                  <Text style={GlobalStyles.texto}>Eliminar</Text>
-                </Pressable>
               </View>
           )}} />
 
