@@ -5,7 +5,6 @@ import { useState } from "react";
 import { router} from "expo-router";
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword } from 'firebase/auth';
 import { auth } from '@/Firebaseconfig';
-import Boton from '../components/Boton';
 
 
 
